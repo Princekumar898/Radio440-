@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="Style(Home)" href="Style(Home).css">
+    <link rel="Style(Home)" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class=" menu-bar">
+        <ul>
+            <li class="active"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-user"></i>About Us</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-clone"></i>Services</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li class="hover-me"><a href="#">Payed Songs<i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Phari</a></li>
+                                    <li><a href="#">Punjabi</a></li>
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Others</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="#">Payed Videos<i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Phari</a></li>
+                                    <li><a href="#">Punjabi</a></li>
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Others</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="#">Free Songs<i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Phari</a></li>
+                                    <li><a href="#">Punjabi</a></li>
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Others</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hover-me"><a href="#">Free Videos<i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="#">Phari</a></li>
+                                    <li><a href="#">Punjabi</a></li>
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Others</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#"><i class="fa fa-users"></i>Clients</a></li>
+            <li><a href="#"><i class="fa fa-angellist"></i>Investors</a></li>
+            <li><a href="#"><i class="fa fa-int"></i>Pricing</a></li>
+            <li><a href="#"><i class="fa fa-edit"></i>Training</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+            <li>Login</li>
+            <li>Sign Up</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="post">
+            <div class="text">Thanks for rating us!</div>
+            <div class="Edit"></div>
+        </div>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+        </div>
+        <font active="#">
+            <header>I don't like it.</header>
+            <div class="textarea">
+                <textarea cols="30" placeholder="Discribe your experience.."></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+        </font>
+    </div>
+    <script>
+        const btn = document.querySelector("button")
+        const post = document.querySelector(".Post")
+        const widget = document.querySelector(".star-widget")
+        const editbtn = document.querySelector(".edit")
+        btn.onclick = () => {
+            widget.style.display = "none";
+            post.style.display = "blank";
+
+            editbtn.onclick = () => {
+                widget.style.display = "blank";
+                post.style.display = "none"
+            }
+            return false;
+        }
+    </script>
+
+    <div class="container">
+        <div class="share-option">
+            <div class="link-container" aria-setsize="10">
+                <p class="link">#
+                    <button class="copy-btn" value="Copy">copy</button>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
